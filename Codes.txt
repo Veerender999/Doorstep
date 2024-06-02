@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Egg Enquiry Form</title>
+</head>
+<body>
+    <h2>Egg Enquiry Form</h2>
+    <form action="/submit_enquiry" method="post">
+        <label for="name">Name of the Customer:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+        
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="eggs">Number of Eggs Needed:</label><br>
+        <input type="number" id="eggs" name="eggs" min="1" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
